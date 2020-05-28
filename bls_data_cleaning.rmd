@@ -1,0 +1,538 @@
+```{r}
+library(tidyverse)
+library(readxl)
+```
+
+#2018
+```{r}
+#merge 2018 files
+bls2018_merged <- rbind(MSA_M2018_dl,BOS_M2018_dl)
+
+bls2018_merged
+```
+
+
+```{r}
+write.csv(bls2018_merged, "bls2018_merged.csv") #write df to file
+```
+
+#2017
+```{r}
+#merge 2017 files
+bls2017_merged <- rbind(aMSA_M2017_dl,BOS_M2017_dl)
+bls2017_merged <- rbind(bls2017_merged, MSA_M2017_dl)
+
+bls2017_merged
+```
+
+```{r}
+write.csv(bls2017_merged, "bls2017_merged.csv") #write df to file
+```
+
+#2016
+```{r}
+#merge 2016 files
+bls2016_merged <- rbind(aMSA_M2016_dl,BOS_M2016_dl)
+bls2016_merged <- rbind(bls2016_merged, MSA_M2016_dl)
+
+bls2016_merged
+```
+
+```{r}
+write.csv(bls2016_merged, "bls2016_merged.csv") #write df to file
+```
+
+#2015
+```{r}
+#merge 2015 files
+bls2015_merged <- rbind(aMSA_M2015_dl,BOS_M2015_dl)
+bls2015_merged <- rbind(bls2015_merged, MSA_M2015_dl)
+
+bls2015_merged
+```
+
+```{r}
+write.csv(bls2015_merged, "bls2015_merged.csv") #write df to file
+```
+
+
+#2014
+```{r}
+#merge 2014 files
+bls2014_merged <- rbind(aMSA_M2014_dl,BOS_M2014_dl)
+bls2014_merged <- rbind(bls2014_merged, MSA_M2014_dl)
+
+bls2014_merged
+```
+
+```{r}
+write.csv(bls2014_merged, "bls2014_merged.csv") #write df to file
+```
+
+#2013
+```{r}
+#merge 2013 files
+bls2013_merged <- rbind(aMSA_M2013_dl,BOS_M2013_dl)
+bls2013_merged <- rbind(bls2013_merged, MSA_M2013_dl_1_AK_IN)
+bls2013_merged <- rbind(bls2013_merged, MSA_M2013_dl_2_KS_NY)
+bls2013_merged <- rbind(bls2013_merged, MSA_M2013_dl_3_OH_WY)
+
+bls2013_merged
+```
+
+
+```{r}
+write.csv(bls2013_merged, "bls2013_merged.csv") #write df to file
+```
+
+#2012
+```{r}
+#merge 2012 files
+bls2012_merged <- rbind(aMSA_M2012_dl,BOS_M2012_dl)
+bls2012_merged <- rbind(bls2012_merged, MSA_M2012_dl_1_AK_IN)
+bls2012_merged <- rbind(bls2012_merged, MSA_M2012_dl_2_KS_NY)
+bls2012_merged <- rbind(bls2012_merged, MSA_M2012_dl_3_OH_WY)
+
+bls2012_merged
+```
+
+```{r}
+write.csv(bls2012_merged, "bls2012_merged.csv") #write df to file
+```
+
+#2011
+```{r}
+#merge 2011 files
+bls2011_merged <- rbind(aMSA_M2011_dl,BOS_M2011_dl)
+bls2011_merged <- rbind(bls2011_merged, MSA_M2011_dl_1_AK_IN)
+bls2011_merged <- rbind(bls2011_merged, MSA_M2011_dl_2_KS_NY)
+bls2011_merged <- rbind(bls2011_merged, MSA_M2011_dl_3_OH_WY)
+
+bls2011_merged
+```
+
+
+```{r}
+write.csv(bls2011_merged, "bls2011_merged.csv") #write df to file
+```
+
+#2010
+```{r}
+#merge 2010 files
+bls2010_merged <- rbind(aMSA_M2010_dl,BOS_M2010_dl)
+bls2010_merged <- rbind(bls2010_merged, MSA_M2010_dl_1)
+bls2010_merged <- rbind(bls2010_merged, MSA_M2010_dl_2)
+bls2010_merged <- rbind(bls2010_merged, MSA_M2010_dl_3)
+
+bls2010_merged
+```
+
+```{r}
+write.csv(bls2010_merged, "bls2010_merged.csv") #write df to file
+```
+
+#2009
+```{r}
+#merge 2009 files
+bls2009_merged <- rbind(aMSA_M2009_dl,BOS_M2009_dl)
+bls2009_merged <- rbind(bls2009_merged, MSA_dl_1)
+bls2009_merged <- rbind(bls2009_merged, MSA_dl_2)
+bls2009_merged <- rbind(bls2009_merged, MSA_dl_3)
+
+bls2009_merged
+```
+
+```{r}
+write.csv(bls2009_merged, "bls2009_merged.csv") #write df to file
+```
+
+# 2008
+```{r}
+#merge 2008 files
+bls2008_merged <- rbind(aMSA_M2008_dl,BOS_M2008_dl)
+bls2008_merged <- rbind(bls2008_merged, MSA_M2008_dl_1)
+bls2008_merged <- rbind(bls2008_merged, MSA_M2008_dl_2)
+bls2008_merged <- rbind(bls2008_merged, MSA_M2008_dl_3)
+
+bls2008_merged
+```
+
+```{r}
+write.csv(bls2008_merged, "bls2008_merged.csv") #write df to file
+```
+
+# 2007
+```{r}
+#merge 2007 files
+bls2007_merged <- rbind(aMSA_May2007_dl,BOS_May2007_dl)
+bls2007_merged <- rbind(bls2007_merged, MSA_May2007_dl_1)
+bls2007_merged <- rbind(bls2007_merged, MSA_May2007_dl_2)
+bls2007_merged <- rbind(bls2007_merged, MSA_May2007_dl_3)
+
+bls2007_merged
+```
+
+```{r}
+write.csv(bls2007_merged, "bls2007_merged.csv") #write df to file
+```
+
+#2006
+```{r}
+#merge 2006 files
+bls2006_merged <- rbind(aMSA_may2006_dl,BOS_may2006_dl)
+bls2006_merged <- rbind(bls2006_merged, MSA_may2006_dl_1)
+bls2006_merged <- rbind(bls2006_merged, MSA_may2006_dl_2)
+bls2006_merged <- rbind(bls2006_merged, MSA_may2006_dl_3)
+
+bls2006_merged
+```
+
+```{r}
+write.csv(bls2006_merged, "bls2006_merged.csv") #write df to file
+```
+
+#2005
+```{r}
+#merge 2005 files
+bls2005_merged <- rbind(aMSA_may2005_dl,MSA_may2005_dl_1)
+bls2005_merged <- rbind(bls2005_merged, MSA_may2005_dl_2)
+bls2005_merged <- rbind(bls2005_merged, MSA_may2005_dl_3)
+
+bls2005_merged
+```
+
+```{r}
+write.csv(bls2005_merged, "bls2005_merged.csv") #write df to file
+```
+
+#2004
+```{r}
+#merge 2004 files
+bls2004_merged <- rbind(MSA_may2004_dl_1,MSA_may2004_dl_2)
+bls2004_merged <- rbind(bls2004_merged, MSA_may2004_dl_3)
+
+bls2004_merged
+```
+
+```{r}
+write.csv(bls2004_merged, "bls2004_merged.csv") #write df to file
+```
+
+#2003
+```{r}
+#merge 2003 files
+bls2003_merged <- rbind(msa_may2003_dl_1,msa_may2003_dl_2)
+
+bls2003_merged
+```
+
+```{r}
+write.csv(bls2003_merged, "bls2003_merged.csv") #write df to file
+```
+
+#2002
+
+```{r}
+#merge 2002 files
+bls2002_merged <- rbind(MSA_2002_dl_1,MSA_2002_dl_2)
+
+bls2002_merged
+
+```
+
+```{r}
+write.csv(bls2002_merged, "bls2002_merged.csv") #write df to file
+```
+
+#2001
+
+```{r}
+#merge 2001 files
+bls2001_merged <- rbind(MSA_2001_dl_1,MSA_2001_dl_2)
+bls2001_merged <- rbind(bls2001_merged, MSA_2001_dl_3)
+
+bls2001_merged
+```
+
+```{r}
+write.csv(bls2001_merged, "bls2001_merged.csv") #write df to file
+```
+
+#2000
+
+```{r}
+#merge 2000 files
+bls2000_merged <- rbind(msa_2000_dl_1,msa_2000_dl_2)
+
+bls2000_merged
+```
+
+```{r}
+write.csv(bls2000_merged, "bls2000_merged.csv") #write df to file
+```
+
+
+#1999
+```{r}
+#merge 1999 files
+bls1999_merged <- rbind(msa_1999_dl_1,msa_1999_dl_2)
+
+bls1999_merged
+```
+
+```{r}
+write.csv(bls1999_merged, "bls1999_merged.csv") #write df to file
+```
+
+
+```{r}
+# adding year 1999
+bls1999_merged = cbind(YEAR = 1999, bls1999_merged)
+
+bls1999_merged = bls1999_merged %>% select(-X1, year) #dropping first column
+
+head(bls1999_merged)
+```
+
+
+```{r}
+# adding year 2000
+bls2000_merged = cbind(YEAR = 2000, bls2000_merged)
+
+bls2000_merged = bls2000_merged %>% select(-X1, year) #dropping first column
+
+head(bls2000_merged)
+```
+
+```{r}
+# adding year 2001
+bls2001_merged = cbind(YEAR = 2001, bls2001_merged)
+
+bls2001_merged = bls2001_merged %>% select(-X1, year) #dropping first column
+
+head(bls2001_merged)
+```
+
+
+```{r}
+# adding year 2002
+bls2002_merged = cbind(YEAR = 2002, bls2002_merged)
+
+bls2002_merged = bls2002_merged %>% select(-X1) #dropping first column
+
+head(bls2002_merged)
+```
+
+```{r}
+# adding year 2003
+bls2003_merged = cbind(YEAR = 2003, bls2003_merged)
+
+bls2003_merged = bls2003_merged %>% select(-X1) #dropping first column
+
+head(bls2003_merged)
+```
+
+```{r}
+# adding year 2004
+bls2004_merged = cbind(YEAR = 2004, bls2004_merged)
+
+bls2004_merged = bls2004_merged %>% select(-X1) #dropping first column
+
+head(bls2004_merged)
+```
+
+```{r}
+# adding year 2005
+bls2005_merged = cbind(YEAR = 2005, bls2005_merged)
+
+bls2005_merged = bls2005_merged %>% select(-X1) #dropping first column
+
+head(bls2005_merged)
+```
+
+```{r}
+# adding year 2006
+bls2006_merged = cbind(YEAR = 2006, bls2006_merged)
+
+bls2006_merged = bls2006_merged %>% select(-X1) #dropping first column
+
+head(bls2006_merged)
+```
+
+```{r}
+# adding year 2007
+bls2007_merged = cbind(YEAR = 2007, bls2007_merged)
+
+bls2007_merged = bls2007_merged %>% select(-X1) #dropping first column
+
+head(bls2007_merged)
+```
+
+```{r}
+# adding year 2008
+bls2008_merged = cbind(YEAR = 2008, bls2008_merged)
+
+bls2008_merged = bls2008_merged %>% select(-X1) #dropping first column
+
+head(bls2008_merged)
+```
+
+```{r}
+# adding year 2009
+bls2009_merged = cbind(YEAR = 2009, bls2009_merged)
+
+head(bls2009_merged)
+```
+
+```{r}
+# adding year 2010
+bls2010_merged = cbind(YEAR = 2010, bls2010_merged)
+
+bls2010_merged = bls2010_merged %>% select(-X1) #dropping first column
+
+head(bls2010_merged)
+```
+
+```{r}
+# adding year 2011
+bls2011_merged = cbind(YEAR = 2011, bls2011_merged)
+
+bls2011_merged = bls2011_merged %>% select(-X1) #dropping first column
+
+head(bls2011_merged)
+```
+
+```{r}
+# adding year 2012
+bls2012_merged = cbind(YEAR = 2012, bls2012_merged)
+
+bls2012_merged = bls2012_merged %>% select(-X1) #dropping first column
+
+head(bls2012_merged)
+```
+
+```{r}
+# adding year 2013
+bls2013_merged = cbind(YEAR = 2013, bls2013_merged)
+
+bls2013_merged = bls2013_merged %>% select(-X1) #dropping first column
+
+head(bls2013_merged)
+```
+
+```{r}
+# adding year 2014
+bls2014_merged = cbind(YEAR = 2014, bls2014_merged)
+
+bls2014_merged = bls2014_merged %>% select(-X1) #dropping first column
+
+head(bls2014_merged)
+```
+
+```{r}
+# adding year 2015
+bls2015_merged = cbind(YEAR = 2015, bls2015_merged)
+
+bls2015_merged = bls2015_merged %>% select(-X1) #dropping first column
+
+head(bls2015_merged)
+```
+
+```{r}
+# adding year 2016
+bls2016_merged = cbind(YEAR = 2016, bls2016_merged)
+
+bls2016_merged = bls2016_merged %>% select(-X1) #dropping first column
+
+head(bls2016_merged)
+```
+
+```{r}
+# adding year 2017
+bls2017_merged = cbind(YEAR = 2017, bls2017_merged)
+
+bls2017_merged = bls2017_merged %>% select(-X1) #dropping first column
+
+head(bls2017_merged)
+```
+
+```{r}
+# adding year 2018
+bls2018_merged = cbind(YEAR = 2018, bls2018_merged)
+
+bls2018_merged = bls2018_merged %>% select(-X1) #dropping first column
+
+head(bls2018_merged)
+```
+
+
+```{r}
+#selecting only relevant columns
+bls1999_merged1 = bls1999_merged %>% select(YEAR, prim_state, area_name, occ_title, tot_emp, h_mean,	a_mean, h_median, a_median)
+bls2000_merged1 = bls2000_merged %>% select(YEAR, prim_state, area_name, occ_titl, tot_emp, h_mean,	a_mean, h_median, a_median)
+bls2001_merged1 = bls2001_merged %>% select(YEAR, prim_state, area_name, occ_title, tot_emp, h_mean,	a_mean, h_median, a_median)
+bls2002_merged1 = bls2002_merged %>% select(YEAR, prim_state, area_name, occ_title, tot_emp, h_mean,	a_mean, h_median, a_median)
+bls2003_merged1 = bls2003_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2004_merged1 = bls2004_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2005_merged1 = bls2005_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2006_merged1 = bls2006_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2007_merged1 = bls2007_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2008_merged1 = bls2008_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2009_merged1 = bls2009_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2010_merged1 = bls2010_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2011_merged1 = bls2011_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2012_merged1 = bls2012_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2013_merged1 = bls2013_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2014_merged1 = bls2014_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2015_merged1 = bls2015_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2015_merged1 = bls2015_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2016_merged1 = bls2016_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2017_merged1 = bls2017_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+bls2018_merged1 = bls2018_merged %>% select(YEAR, PRIM_STATE, AREA_NAME, OCC_TITLE, TOT_EMP, H_MEAN,	A_MEAN, H_MEDIAN, A_MEDIAN)
+
+
+#changing capitalization of 1999-2002 columns
+bls1999_merged1 = bls1999_merged1 %>% rename('PRIM_STATE' = prim_state, 'AREA_NAME' = area_name, 'OCC_TITLE' = occ_title, 'TOT_EMP' = tot_emp, 'H_MEAN' = h_mean, 'A_MEAN' =	a_mean,'H_MEDIAN' = h_median, 'A_MEDIAN' = a_median)
+
+bls2000_merged1 = bls2000_merged1 %>% rename('PRIM_STATE' = prim_state, 'AREA_NAME' = area_name, 'OCC_TITLE' = occ_titl, 'TOT_EMP' = tot_emp, 'H_MEAN' = h_mean, 'A_MEAN' =	a_mean,'H_MEDIAN' = h_median, 'A_MEDIAN' = a_median)
+
+bls2001_merged1 = bls2001_merged1 %>% rename('PRIM_STATE' = prim_state, 'AREA_NAME' = area_name, 'OCC_TITLE' = occ_title,'TOT_EMP' = tot_emp, 'H_MEAN' = h_mean, 'A_MEAN' =	a_mean,'H_MEDIAN' = h_median, 'A_MEDIAN' = a_median)
+
+bls2002_merged1 = bls2002_merged1 %>% rename('PRIM_STATE' = prim_state, 'AREA_NAME' = area_name, 'OCC_TITLE' = occ_title,'TOT_EMP' = tot_emp, 'H_MEAN' = h_mean, 'A_MEAN' =	a_mean,'H_MEDIAN' = h_median, 'A_MEDIAN' = a_median)
+
+
+#creating one merged dataset
+df_1999_2018 = rbind(bls1999_merged1, bls2000_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2001_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2002_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2003_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2004_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2005_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2006_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2007_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2008_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2009_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2010_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2011_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2012_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2013_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2014_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2015_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2016_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2017_merged1)
+df_1999_2018 = rbind(df_1999_2018, bls2018_merged1)
+```
+
+
+```{r}
+#since the * and ** are preventing python from importing, replace with NA
+df_1999_2018[df_1999_2018 == '*' | df_1999_2018 == '**' | df_1999_2018 == '***'] <- NA
+
+
+count(df_1999_2018, vars = NA)
+#count(df_2000_2010, vars = '**')
+
+write.csv(df_1999_2018, "1999_2018_merged_clean.csv")
+```
+
+
